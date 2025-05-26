@@ -15,17 +15,17 @@
                 <tr>
                     <td><label for="first-name"> First Name</label>
                     </td>
-                    <td> <input type="text" name="fname" id="first-name" placeholder="first-name"></td>
+                    <td> <input type="text" name="fname" id="first-name" placeholder="first-name" required></td>
                     <td>
                         <lable for="last-name"> Last Name</lable>
                     </td>
-                    <td><input type="text" name="lname" id="last-name" placeholder="last-name" </td>
+                    <td><input type="text" name="lname" id="last-name" placeholder="last-name"> </td>
                 </tr>
                 <tr>
                     <td>
                         <lable for="ph-num"> Phone Number</lable>
                     </td>
-                    <td><input type="number" name="number" id="ph-num"></td>
+                    <td><input type="number" name="number" id="ph-num" required></td>
                     <td>
                         <lable for="E-mail">Enter E-mail</lable>
                     </td>
@@ -47,7 +47,7 @@
 
                     </td>
                     <td colspan="2"><label for="Male">Male
-                            <input type="radio" name="gender" id="Male" value="male">
+                            <input type="radio" name="gender" id="Male" value="male" required>
                         </label></td>
 
                 </tr>
@@ -65,7 +65,7 @@
                         </lable>
                     </td>
                 </tr>
-                
+
                 <tr>
                     <td colspan="2">
                         <lable for="Ur">Urdu
@@ -78,13 +78,36 @@
                         </lable>
                     </td>
                 </tr>
-               
+
                 <tr>
                     <td colspan="4">Comment:</td>
                 </tr>
                 <tr>
                     <td colspan="4">
-                        <textarea name="comment" id="comment" cols="100" rows="10" maxlength="50"> </textarea></td>
+                        <textarea name="comment" id="comment" cols="100" rows="10" maxlength="50"> </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="color">chooce a color
+                            <input type="color" name="color" id="color">
+                        </label>
+                    </td>
+                    <td>
+                        <label for="datetime">Enter your DOB
+                            <input type="datetime-local" name="datetime" id="datetime">
+                        </label>
+                    </td>
+                    <td>
+                        <label for="salary">
+                            salary range <input type="range" name="salary" id="salary">
+                        </label>
+                    </td>
+                    <td>
+                        <label for="find">
+                            <input type="search" name="find" id="find" placeholder="search">
+                        </label>
+                    </td>
                 </tr>
                 <tr>
                     <td colspan="4"><input type="submit"></td>
@@ -93,7 +116,7 @@
         </center>
     </form>
 
-    <h1>Registration form</h1>
+    <!-- <h1>Registration form</h1>
 
     <form>
         <fieldset>
@@ -151,11 +174,8 @@
                 <textarea name="comment" id="comment" cols="30" rows="4"> </textarea>
             </p>
             <input type="submit">
-
-
         </fieldset>
-
-    </form>
+    </form> -->
 </body>
 
 </html>
