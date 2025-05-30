@@ -8,79 +8,85 @@
     <title>Regestration form</title>
 </head>
 
-<body>
+<body bgcolor="#E1AAJF">
+    <center>
+        <h1 style="text-decoration: underline;  font-family:Geneva, sans-serif">logIn Form</h1>
+    </center>
     <form action="">
         <center>
-            <table border="1" cellpadding="7" bgcolor="#11ffeeee">
+            <table border="1" cellpadding="15" cellspasing="10" bgcolor="#11ffeeee" width="80px">
                 <tr>
-                    <td><label for="first-name"> First Name</label>
+                    <td>
+                        <label for="first-name"> First Name</label>
                     </td>
                     <td> <input type="text" name="fname" id="first-name" placeholder="first-name" required></td>
                     <td>
-                        <lable for="last-name"> Last Name</lable>
+                        <label for="last-name"> Last Name</label>
                     </td>
-                    <td><input type="text" name="lname" id="last-name" placeholder="last-name"> </td>
+                    <td><input type="text" name="lname" id="last-name" placeholder="last-name" required> </td>
                 </tr>
                 <tr>
                     <td>
-                        <lable for="ph-num"> Phone Number</lable>
+                        <label for="ph-num"> Phone Number</label>
                     </td>
                     <td><input type="number" name="number" id="ph-num" required></td>
                     <td>
-                        <lable for="E-mail">Enter E-mail</lable>
+                        <label for="E-mail">Enter E-mail</label>
                     </td>
-                    <td> <input type="email" name="email" id="E-mail" placeholder="abc@gmail.com"></td>
+                    <td> <input type="email" name="email" id="E-mail" placeholder="abc@gmail.com" autocomplete="on"></td>
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <lable for="pass">Enter Password</lable>
+                        <label for="pass">Enter Password</label>
                     </td>
-                    <td colspan="2"> <input type="password" name="password" id="pass" maxlength="9" size="30"></td>
+                    <td colspan="2"> <input type="password" name="password" id="pass" maxlength="9" size="30" ></td>
                 </tr>
                 <tr>
                     <td colspan="4" bgcolor="rgb(1096 45 784);">Choose gender:</td>
                 <tr>
                     <td colspan="2">
-                        <lable for="Female">female
-                            <input type="radio" name="gender" id="Female" value="female" checked>
-                        </lable>
+                        <label for="Female">female
+                            <input type="radio" name="gender" id="Female" value="female" checked required>
+                        </label>
 
                     </td>
-                    <td colspan="2"><label for="Male">Male
+                    <td colspan="2">
+                        <label for="Male">Male
                             <input type="radio" name="gender" id="Male" value="male" required>
-                        </label></td>
+                        </label>
+                    </td>
 
                 </tr>
 
                 <td colspan="4" bgcolor="rgb(1096 45 784)"> Choose Subject</td>
                 <tr>
                     <td colspan="2">
-                        <lable for="Eng">English
-                            <input type="checkbox" name="sub" value="eng" id="Eng">
-                        </lable>
+                        <label for="Eng">English
+                            <input type="checkbox" name="sub" value="eng" id="Eng" required>
+                        </label>
                     </td>
                     <td colspan="2">
-                        <lable for="Isl">Islamyat
-                            <input type="checkbox" name="sub" value="isl" id="Isl">
-                        </lable>
+                        <label for="Isl">Islamyat
+                            <input type="checkbox" name="sub" value="isl" id="Isl" required>
+                        </label>
                     </td>
                 </tr>
 
                 <tr>
                     <td colspan="2">
-                        <lable for="Ur">Urdu
-                            <input type="checkbox" name="sub" value="ur" id="Ur">
-                        </lable>
+                        <label for="Ur">Urdu
+                            <input type="checkbox" name="sub" value="ur" id="Ur" required>
+                        </label>
                     </td>
                     <td colspan="2">
-                        <lable for="Sci">Science
-                            <input type="checkbox" name="sub" value="sci" id="Sci">
-                        </lable>
+                        <label for="Sci">Science
+                            <input type="checkbox" name="sub" value="sci" id="Sci" required>
+                        </label>
                     </td>
                 </tr>
 
                 <tr>
-                    <td colspan="4">Comment:</td>
+                    <td colspan="4"> <label for="comment">Comment:</label></td>
                 </tr>
                 <tr>
                     <td colspan="4">
@@ -93,9 +99,9 @@
                             <input type="color" name="color" id="color">
                         </label>
                     </td>
-                    <td>
+                    <td colspan="2">
                         <label for="datetime">Enter your DOB
-                            <input type="datetime-local" name="datetime" id="datetime">
+                            <input type="datetime-local" name="datetime" id="datetime" required>
                         </label>
                     </td>
                     <td>
@@ -103,18 +109,23 @@
                             salary range <input type="range" name="salary" id="salary">
                         </label>
                     </td>
-                    <td>
-                        <label for="find">
-                            <input type="search" name="find" id="find" placeholder="search">
+                </tr>
+                <tr>
+                    <td colspan="4">
+                       <center> <label for="find">
+                            <input type="search" name="find" id="find" placeholder="search" size="30px" style="padding: 8px;"> <button style="height: 30px;">Search</button>
                         </label>
+                    </center>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="4"><input type="submit"></td>
-                </tr>
-            </table>
-        </center>
-    </form>
+                    <td colspan="4">
+                        <center> <button style="height: 40px; width: 140px; background-color: rgb(212, 183, 147); color: aliceblue; font-size: medium; font-weight: bold;" type="submit">SUBMIT</button></center>
+                    </td>
+            </tr>
+        </table>
+    </center>
+</form>
 
     <!-- <h1>Registration form</h1>
 
@@ -127,47 +138,47 @@
                 </label>
             </p>
             <p>
-                <lable for="last-name"> Last Name
+                <label for="last-name"> Last Name
                     <input type="text" name="lname" id="last-name" placeholder="last-name">
-                </lable>
+                </label>
             </p>
             <p>
-                <lable for="ph-num"> Phone Number
+                <label for="ph-num"> Phone Number
                     <input type="number" name="number" id="ph-num">
-                </lable>
+                </label>
             </p>
             <p>
-                <lable for="E-mail">Enter E-mail
+                <label for="E-mail">Enter E-mail
                     <input type="email" name="email" id="E-mail" placeholder="abc@gmail.com">
-                </lable>
+                </label>
             </p>
             <p>
-                <lable for="pass">Enter Password
+                <label for="pass">Enter Password
                     <input type="password" name="password" id="pass" maxlength="9">
-                </lable>
+                </label>
             </p>
             <p>
-                <lable for="Female">female
+                <label for="Female">female
                     <input type="radio" name="gender" id="Female" value="female" checked>
-                </lable>
+                </label>
                 <label for="Male">Male
                     <input type="radio" name="gender" id="Male" value="male">
 
                 </label>
             </p>
             <p>
-                <lable for="Eng">English
+                <label for="Eng">English
                     <input type="checkbox" name="sub" value="eng" id="Eng">
-                </lable>
-                <lable for="Isl">Islamyat
+                </label>
+                <label for="Isl">Islamyat
                     <input type="checkbox" name="sub" value="isl" id="Isl">
-                </lable>
-                <lable for="Ur">Urdu
+                </label>
+                <label for="Ur">Urdu
                     <input type="checkbox" name="sub" value="ur" id="Ur">
-                </lable>
-                <lable for="Sci">Science
+                </label>
+                <label for="Sci">Science
                     <input type="checkbox" name="sub" value="sci" id="Sci">
-                </lable>
+                </label>
             </p>
 
             <p>comments
